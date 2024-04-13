@@ -1,0 +1,62 @@
+main {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.levels-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: max-content;
+
+  .level {
+    background-color: #f5f5f5;
+    box-shadow: 0 0 10px 1px #7c7c7c;
+    border-radius: 15px;
+    width: max-content;
+    height: max-content;
+    transition: all 1.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .level_heading {
+      padding: 15px 50px;
+      font-size: 18px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+      gap: 20px;
+
+      .content_heading {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        p {
+          line-height: 1.1em;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .buy_btn {
+      margin-top: 10px;
+    }
+  }
+}
+
+.level:hover {
+  transition: all 1.3s ease-in-out;
+  transform: scale(1.2);
+  z-index: 2;
+  background-color: #f5f5f5;
+}

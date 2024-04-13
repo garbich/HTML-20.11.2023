@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #f5f5f5;
+}
+
+/* Paragraph and H2 */
+p,
+h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  line-height: 2em;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+/* Button */
+button {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Hr */
+hr {
+  height: 5px;
+  width: 100%;
+  border: none;
+}
+
+/* Change color for time period */
+.time_period {
+  color: #d2d2da;
+}
+
+/* Change color for all level's buttons */
+/* Enterprise */
+.enterprise hr {
+  background-color: #c73856;
+}
+
+.enterprise .buy_btn {
+  background-color: #c73856;
+}
+
+/* Professional */
+.professional hr {
+  background-color: #d8923c;
+}
+
+.professional .buy_btn {
+  background-color: #d8923c;
+}
+
+/* Standard */
+.standard hr {
+  background-color: #2a6689;
+}
+
+.standard .buy_btn {
+  background-color: #2a6689;
+}
+
+/* Basic */
+.basic hr {
+  background-color: #63ba35;
+}
+
+.basic .buy_btn {
+  background-color: #63ba35;
+}

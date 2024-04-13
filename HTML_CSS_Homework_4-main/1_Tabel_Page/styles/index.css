@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 20px;
+}
+
+/* BODY */
+body {
+  padding: 20px;
+  background-color: #F5F5F5;
+}
+
+
+/* Table wrapper*/
+/* Scroll in two ways */
+/* Fixed height and width to have possibility perform scroll */
+#table_wrapper {
+  height: 300px;
+  width: 600px;
+  overflow: auto;
+}
+
+/* Table */
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  width: max-content;
+}
+
+/* Table head */
+#table thead, #table th {
+  position: sticky;
+  background-color: #ADD9E6;
+  width: max-content;
+}
+
+/* Top row is fixed and when you scroll, it stands at the same place */
+#table thead {
+  top: 0;
+  z-index: 2;
+}
+
+/* Table cells */
+#table td {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Left column is fixed and when you scroll, it stands at the same place */
+#table th {
+  left: 0;
+  z-index: 1;
+  padding: 10px 40px;
+}
+
+/* Bold header and left side of table and bcg color */
+#table th,
+thead td {
+  font-weight: bold;
+  background-color: #ADD9E6;
+}
+
+/* Colors for Even and Odd rows */
+tr:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
+tr:nth-child(even) {
+  background-color: #E9E9E9;
+}
+
+/* Fixed empty block in top-left corner*/
+.empty_field {
+  background-color: #ADD9E6;
+  left: 0;
+  z-index: 50;
+  position: sticky;
+}
